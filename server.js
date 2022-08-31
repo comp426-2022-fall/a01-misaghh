@@ -35,7 +35,7 @@ fs.readFile('./public/index.html', 'utf8', (err, data) => {
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('content-type', `text/html`);
-    res.end(`./public/index.html`);
+    res.end(data);
   });
 
 
